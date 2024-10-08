@@ -1,0 +1,27 @@
+<idea-plugin>
+  <id>com.snart.idea.plugin.json2pojo</id>
+  <name>Json2pojo</name>
+  <vendor email="snartlu@gmail.com" url="https://github.com/blacksider/json2pojo">Json2pojo</vendor>
+  <description><![CDATA[
+    Json2pojo plugin, feature:<br>
+     <ul>
+        <li>Convert json to POJO</li>
+        <li>Convert json schema to POJO</li>
+      </ul>
+  ]]></description>
+
+  <depends>com.intellij.modules.platform</depends>
+  <depends>com.intellij.java</depends>
+
+  <extensions defaultExtensionNs="com.intellij">
+  </extensions>
+
+  <actions>
+    <action id="com.snart.idea.plugin.json2pojo.Json2PojoAction"
+            class="com.snart.idea.plugin.json2pojo.Json2PojoAction"
+            icon="AllIcons.FileTypes.JavaClass"
+            text="Json2Pojo" description="Generate pojo from json">
+      <add-to-group group-id="NewGroup" anchor="first"/>
+    </action>
+  </actions>
+</idea-plugin>
